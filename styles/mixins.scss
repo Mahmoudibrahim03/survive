@@ -1,0 +1,75 @@
+// ==/ Mixiens section /==
+@mixin normalizeElements {
+    * {
+        box-sizing: border-box;
+    }
+
+    button {
+        outline: none;
+        padding: 0;
+        border: 0;
+    }
+
+    input {
+        background: transparent;
+        outline: none;
+        border: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        margin: 0;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a {
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        font-size: $small-font-size;
+    }
+
+    a {
+        font-size: $medium-font-size;
+        color: $primary-color;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    }
+}
+
+@mixin fontFamilies {
+    @font-face {
+        font-family: 'Adevale';
+        src: url(../../assets/fonts/Adevale/Adevale.ttf);
+    }
+
+    @font-face {
+        font-family: 'Teko';
+        src: url(../../assets/fonts/Teko/Teko-Medium.ttf);
+    }
+
+    @font-face {
+        font-family: 'TT Lakes';
+        src: url(../../assets/fonts/TT-Lakes-Font/TT_Lakes_Medium.otf) format("opentype");
+    }
+}

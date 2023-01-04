@@ -1,0 +1,662 @@
+@font-face {
+  font-family: "Adevale";
+  src: url(../../assets/fonts/Adevale/Adevale.ttf);
+}
+@font-face {
+  font-family: "Teko";
+  src: url(../../assets/fonts/Teko/Teko-Medium.ttf);
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url(../../assets/fonts/TT-Lakes-Font/TT_Lakes_Medium.otf) format("opentype");
+}
+* {
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  padding: 0;
+  border: 0;
+}
+
+input {
+  background: transparent;
+  outline: none;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+a {
+  font-size: 1.7rem;
+  color: #000;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.container-left {
+  max-width: 1720px;
+  margin-left: 100px;
+  margin-right: 65px;
+}
+
+html {
+  font-size: 10px;
+  background-color: #EDF0F2;
+}
+html body .main {
+  font-size: 1.7rem;
+  font-family: "Teko";
+}
+html body .main .header .container-left nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 104px;
+  margin-top: 4rem;
+}
+html body .main .header .container-left nav .logo {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+html body .main .header .container-left nav .logo img {
+  height: 100%;
+}
+html body .main .header .container-left nav .right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+html body .main .header .container-left nav .right-nav ul {
+  display: flex;
+  align-items: center;
+}
+html body .main .header .container-left nav .right-nav ul a,
+html body .main .header .container-left nav .right-nav ul button {
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-family: "Teko";
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+html body .main .header .container-left nav .right-nav ul li {
+  margin-left: 5rem;
+}
+html body .main .header .container-left nav .right-nav ul li a {
+  transition: 0.25s;
+}
+html body .main .header .container-left nav .right-nav ul li a:hover {
+  color: #e4003b;
+}
+html body .main .header .container-left nav .right-nav ul li:last-child button {
+  border-radius: 50%;
+  background-color: #e4003b;
+  color: #fff;
+  width: 4.6rem;
+  height: 4.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body .main .header .container-left nav .right-nav ul li:nth-child(2) button {
+  border-radius: 50%;
+  border: 2px solid #000;
+  width: 2.8rem;
+  height: 2.8rem;
+}
+html body .main .header .container-left nav .right-nav ul li:nth-child(2) button img {
+  height: 100%;
+  margin-top: 2px;
+}
+html body .main .header .container-left nav .right-nav ul:last-child {
+  margin-left: 5rem;
+}
+html body .main .header .container-left nav .right-nav ul:last-child::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 3.8rem;
+  background-color: #000;
+  opacity: 0.3;
+  margin: 0 2rem;
+}
+html body .main .header .container-left .header-content {
+  height: calc(100vh - 200px);
+  margin-top: 4rem;
+  display: flex;
+  padding-bottom: 1rem;
+}
+html body .main .header .container-left .header-content .intro {
+  height: 100%;
+  width: 30%;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html body .main .header .container-left .header-content .intro .titles {
+  display: flex;
+}
+html body .main .header .container-left .header-content .intro .titles .main-title {
+  font-size: 17.6rem;
+  line-height: 0.87;
+  color: #e4003b;
+  max-width: 15.4rem;
+  overflow-wrap: break-word;
+  font-weight: lighter;
+}
+html body .main .header .container-left .header-content .intro .titles .subtitle {
+  padding-top: 3.13rem;
+  font-size: 5.5rem;
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  transform: rotate(-180deg);
+  font-weight: lighter;
+}
+html body .main .header .container-left .header-content .intro .additional-info {
+  display: flex;
+  height: 100%;
+}
+html body .main .header .container-left .header-content .intro .additional-info .social-links {
+  display: flex;
+  align-items: end;
+  width: 7.85rem;
+  justify-content: center;
+  text-align: center;
+  max-height: 29.5rem;
+}
+html body .main .header .container-left .header-content .intro .additional-info .social-links li {
+  margin-bottom: 2rem;
+}
+html body .main .header .container-left .header-content .intro .additional-info .additional-description p {
+  max-width: 277px;
+  font-family: "TT Lakes";
+  font-size: 1.4rem;
+  line-height: 2;
+}
+html body .main .header .container-left .header-content .slider {
+  width: 65%;
+}
+html body .main .header .container-left .header-content .slider .no-js .owl-carousel,
+html body .main .header .container-left .header-content .slider .owl-carousel.owl-loaded {
+  max-height: 99%;
+  position: relative;
+  overflow-y: clip;
+}
+html body .main .header .container-left .header-content .slider .no-js .owl-carousel *:not(.owl-nav, .owl-dots),
+html body .main .header .container-left .header-content .slider .owl-carousel.owl-loaded *:not(.owl-nav, .owl-dots) {
+  max-height: 100%;
+}
+html body .main .header .container-left .header-content .slider .no-js .owl-carousel .item img,
+html body .main .header .container-left .header-content .slider .owl-carousel.owl-loaded .item img {
+  aspect-ratio: 6/4.2;
+  max-height: 700px;
+}
+html body .main .header .container-left .header-content .slider .no-js .owl-carousel .owl-dots,
+html body .main .header .container-left .header-content .slider .owl-carousel.owl-loaded .owl-dots {
+  position: absolute;
+  bottom: 0;
+  right: -11.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+html body .main .header .container-left .header-content .slider .no-js .owl-carousel .owl-dots .owl-dot,
+html body .main .header .container-left .header-content .slider .owl-carousel.owl-loaded .owl-dots .owl-dot {
+  margin: 2rem 0.5rem;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  font-family: "Teko";
+}
+html body .main .header .container-left .header-content .slider .no-js .owl-carousel .owl-dots .owl-dot.active,
+html body .main .header .container-left .header-content .slider .owl-carousel.owl-loaded .owl-dots .owl-dot.active {
+  margin: 1.5rem 0;
+  font-size: 10rem;
+  transition: all 0.25s ease-in-out;
+  font-weight: bold;
+  line-height: 1.1;
+  padding-left: 26px !important;
+  border-bottom: 1px solid #e4003b;
+}
+html body .main .header .container-left .header-content .slider .no-js .owl-carousel .owl-nav,
+html body .main .header .container-left .header-content .slider .owl-carousel.owl-loaded .owl-nav {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body .main .header .container-left .header-content .slider .no-js .owl-carousel .owl-nav .owl-prev,
+html body .main .header .container-left .header-content .slider .no-js .owl-carousel .owl-nav .owl-next,
+html body .main .header .container-left .header-content .slider .owl-carousel.owl-loaded .owl-nav .owl-prev,
+html body .main .header .container-left .header-content .slider .owl-carousel.owl-loaded .owl-nav .owl-next {
+  width: 6.6rem;
+  height: 6.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+html body .main .header .container-left .header-content .slider .no-js .owl-carousel .owl-nav .owl-prev img,
+html body .main .header .container-left .header-content .slider .no-js .owl-carousel .owl-nav .owl-next img,
+html body .main .header .container-left .header-content .slider .owl-carousel.owl-loaded .owl-nav .owl-prev img,
+html body .main .header .container-left .header-content .slider .owl-carousel.owl-loaded .owl-nav .owl-next img {
+  width: 2.6rem;
+  height: 1.8rem;
+}
+html body .main .header .container-left .header-content .slider .no-js .owl-carousel .owl-nav .owl-next,
+html body .main .header .container-left .header-content .slider .owl-carousel.owl-loaded .owl-nav .owl-next {
+  background-color: #e4003b;
+}
+html body .main .challenges {
+  padding: 1rem;
+  display: flex;
+}
+html body .main .challenges .challenges-list {
+  max-width: 60%;
+  height: 98vh;
+  overflow: scroll;
+}
+html body .main .challenges .challenges-list h2 {
+  font-size: 6rem;
+  font-weight: lighter;
+  margin: 5rem 0;
+}
+html body .main .challenges .challenges-list .challenge-item {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+html body .main .challenges .challenges-list .challenge-item .challenge-img {
+  margin-right: 7.5rem;
+}
+html body .main .challenges .challenges-list .challenge-item .challenge-img img {
+  width: 100%;
+  min-width: 40rem;
+}
+html body .main .challenges .challenges-list .challenge-item .challenge-info span {
+  color: #e4003b;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+html body .main .challenges .challenges-list .challenge-item .challenge-info h3.challenge-title {
+  font-size: 3.6rem;
+  margin-bottom: 2.8rem;
+}
+html body .main .challenges .challenges-list .challenge-item .challenge-info p.challenge-description {
+  font-size: 1.4rem;
+  max-width: 40rem;
+  font-family: "TT Lakes";
+  margin-bottom: 2.3rem;
+}
+html body .main .challenges .challenges-list .challenge-item .challenge-info a.challenge-link {
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+}
+html body .main .challenges .challenges-list .challenge-item .challenge-info a.challenge-link img {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+html body .main .challenges .challenges-list .challenge-item .challenge-info a.challenge-link span {
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+html body .main .challenges .main-challenge {
+  width: 40%;
+  margin: 0 auto;
+}
+html body .main .challenges .main-challenge .challenge-cover {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+}
+html body .main .challenges .main-challenge .challenge-cover img {
+  position: absolute;
+  height: 57%;
+  left: 13%;
+}
+html body .main .challenges .main-challenge .challenge-cover img:nth-child(2) {
+  top: 88%;
+  transform: translateY(-100%);
+}
+html body .main .challenges .main-challenge .challenge-info {
+  max-width: 41.4rem;
+  margin: 0 auto;
+}
+html body .main .challenges .main-challenge .challenge-info h2 {
+  font-size: 6rem;
+  margin-bottom: 1.3rem;
+  line-height: 1;
+}
+html body .main .challenges .main-challenge .challenge-info h3 {
+  font-size: 3.6rem;
+  margin-bottom: 2.1rem;
+  font-weight: 100;
+  line-height: 1;
+}
+html body .main .challenges .main-challenge .challenge-info p {
+  font-size: 1.4rem;
+  font-family: "TT Lakes";
+  margin-bottom: 2rem;
+  line-height: 20px;
+}
+html body .main .challenges .main-challenge .challenge-info a.challenge-link {
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  color: #e4003b;
+}
+html body .main .challenges .main-challenge .challenge-info a.challenge-link img {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+html body .main .challenges .main-challenge .challenge-info a.challenge-link span {
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+html body .main .results {
+  display: flex;
+  height: 100vh;
+  padding: 3rem 0;
+}
+html body .main .results .result-info {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  max-width: 280px;
+}
+html body .main .results .result-info .info .info-title {
+  font-size: 1.7rem;
+  font-weight: lighter;
+  line-height: 2;
+}
+html body .main .results .result-info .info span.head-size {
+  font-size: 28rem;
+  font-weight: lighter;
+  line-height: 1;
+  color: #e4003b;
+}
+html body .main .results .result-info .info .info-content {
+  font-size: 6rem;
+  font-weight: lighter;
+  line-height: 1;
+  display: flex;
+  margin-top: -3rem;
+}
+html body .main .results .result-info .info .info-content span {
+  font-size: inherit;
+  font-weight: inherit;
+  color: #e4003b;
+  display: contents;
+}
+html body .main .results .result-info .info a {
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  margin-top: 5rem;
+}
+html body .main .results .result-info .info a img {
+  margin-right: 1.5rem;
+  height: 100%;
+}
+html body .main .results .result-cover {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+html body .main .results .result-cover .direction-info {
+  margin-right: 2rem;
+}
+html body .main .results .result-cover .direction-info p {
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  transform: rotate(-180deg);
+  font-size: 10vw;
+  color: #fff;
+  font-weight: lighter;
+  line-height: 1;
+}
+html body .main .results .result-cover .result-data {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html body .main .results .result-cover .result-data img.cover-photo {
+  position: absolute;
+  height: 100%;
+}
+html body .main .results .result-cover .photo-1 {
+  width: auto;
+  right: 50%;
+  transform: translateX(33%);
+}
+html body .main .results .result-cover .result-cotnainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+html body .main .results .result-cover .result-cotnainer .data-content {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  width: 340px;
+  font-weight: 100;
+  line-height: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -35%);
+}
+html body .main .results .result-cover .result-cotnainer .data-content h2 {
+  font-size: 6rem;
+}
+html body .main .results .result-cover .result-cotnainer .data-content h3 {
+  margin-top: 5rem;
+  font-size: 3.6rem;
+}
+html body .main .results .result-cover .result-cotnainer .data-content a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  margin-top: 5rem;
+}
+html body .main .results .result-cover .result-cotnainer .data-content a img {
+  height: 100%;
+  margin-right: 3rem;
+}
+html body .main .gallery-footer {
+  height: 100vh;
+  padding-top: 3rem;
+}
+html body .main .gallery-footer .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html body .main .gallery-footer .gallery-items {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+html body .main .gallery-footer .gallery-items .gallery-item {
+  margin-right: 4rem;
+  position: relative;
+  flex-grow: 1;
+  overflow: hidden;
+  height: 500px;
+  width: 33.3%;
+}
+html body .main .gallery-footer .gallery-items .gallery-item .icon {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  z-index: 1000;
+}
+html body .main .gallery-footer .gallery-items .gallery-item:last-child {
+  margin-right: 0;
+}
+html body .main .gallery-footer .gallery-items .gallery-item .item-info {
+  position: absolute;
+  color: #fff;
+  bottom: 50px;
+  padding-left: 50px;
+  max-width: 90%;
+}
+html body .main .gallery-footer .gallery-items .gallery-item .item-info p {
+  font-size: 1.7rem;
+  font-weight: 100;
+  line-height: 1;
+}
+html body .main .gallery-footer .gallery-items .gallery-item .item-info p:last-child {
+  margin-top: 2rem;
+  font-size: 3.6rem;
+}
+html body .main .gallery-footer .gallery-items .gallery-item .cover-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+html body .main .gallery-footer .gallery-items .gallery-item:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+html body .main .gallery-footer .gallery-items .gallery-item:last-child .cover-image {
+  position: initial;
+  width: 100%;
+  height: auto;
+}
+html body .main .gallery-footer .gallery-items .gallery-item:last-child .cover-image img {
+  width: 100%;
+}
+html body .main .gallery-footer .gallery-items .gallery-item:last-child .item-info {
+  position: initial;
+}
+html body .main .gallery-footer .gallery-items .gallery-item:last-child .item-info p {
+  color: #000;
+  font-family: "TT Lakes";
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  line-height: 1.8555;
+}
+html body .main .gallery-footer .gallery-items .gallery-item:last-child .item-info a.challenge-link {
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  color: #e4003b;
+}
+html body .main .gallery-footer .gallery-items .gallery-item:last-child .item-info a.challenge-link img {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+html body .main .gallery-footer .gallery-items .gallery-item:last-child .item-info a.challenge-link span {
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+html body .main .gallery-footer .footer {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  background-image: url("../../assets/images/footer cover.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 5.6rem 7rem 2rem 7rem;
+  height: 43vh;
+}
+html body .main .gallery-footer .footer .logo {
+  width: 20%;
+  margin-right: 5rem;
+}
+html body .main .gallery-footer .footer .lists {
+  display: flex;
+}
+html body .main .gallery-footer .footer .lists:last-child {
+  margin-right: 0;
+}
+html body .main .gallery-footer .footer .lists .list {
+  margin-right: 20rem;
+}
+html body .main .gallery-footer .footer .lists .list h2 {
+  font-size: 3.6rem;
+  font-weight: 100;
+  line-height: 1;
+  color: #e4003b;
+  margin-bottom: 2rem;
+}
+html body .main .gallery-footer .footer .lists .list ul li {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.5;
+  font-family: "TT Lakes";
+  color: #fff;
+}
+html body .main .gallery-footer .footer .lists .list .social-icons {
+  padding-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+html body .main .gallery-footer .footer .lists .list .social-icons a {
+  font-size: 2.5rem;
+  color: #fff;
+}

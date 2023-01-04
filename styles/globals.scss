@@ -1,0 +1,12 @@
+@mixin containers {
+    .container {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .container-left {
+        max-width: 1720px;
+        margin-left: 100px;
+        margin-right: 65px;
+    }
+}
